@@ -1,0 +1,5 @@
+Assignment 6
+Saksham Khandelwal
+String - https://jsbin.com/vahogozuja/edit?js,console
+Array - https://jsbin.com/holapudata/edit?js,console
+Object - https://jsbin.com/satanemone/edit?js,console
