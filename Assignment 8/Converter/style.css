@@ -1,0 +1,12 @@
+.card-block h4,span{
+    display: inline-block;
+}
+
+.btn{
+    background-color: #03fca1;
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
