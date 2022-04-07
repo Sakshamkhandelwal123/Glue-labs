@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+// import ListPost from './components/ListPost';
 // import EventBind from './components/EventBind';
-import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
+// import ParentComponent from './components/ParentComponent';
+// import UserGreeting from './components/UserGreeting';
 // import Counter from './components/Counter';
 // import { Greet, ReactGreet } from './components/Greet';
 // import Greetings from './components/Greetings';
 // import Welcome from './components/Welcome';
+import DemoForm from './components/DemoForm';
+import RefsDemo from './components/RefsDemo';
 
 
 function App() {
@@ -23,7 +26,10 @@ function App() {
       {/* <Counter /> */}
       {/* <EventBind /> */}
       {/* <ParentComponent /> */}
-      <UserGreeting />
+      {/* <UserGreeting /> */}
+      {/* <ListPost /> */}
+      {/* <DemoForm /> */}
+      <RefsDemo />
     </div>
   );
 }
