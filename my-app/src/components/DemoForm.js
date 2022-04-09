@@ -7,7 +7,9 @@ class DemoForm extends Component {
         this.state = {
             email: '',
             comment: '',
-            language: 'vue'
+            language: 'vue',
+            check: false,
+            gender: '',
         }
     }
 
@@ -26,6 +28,18 @@ class DemoForm extends Component {
     changeLangHandler = (event) => {
         this.setState({
             language: event.target.value
+        })
+    }
+
+    changeCheckHandler = (event) => {
+        this.setState({
+            check: !this.state.check
+        })
+    }
+
+    changeradiohandler = (event) => {
+        this.setState({
+            gender: event.target.value
         })
     }
 
@@ -54,6 +68,23 @@ class DemoForm extends Component {
                         <option value="angular">Angular</option>
                         <option value="vue">Vue</option>
                     </select>
+                </div>
+                <br />
+                <div>
+                    <label htmlFor='checkbox'>Check: </label>
+                    <input type="checkbox" id="check" value={this.state.check} onChange={this.changeCheckHandler} />
+                    <div>
+                      Checked {this.state.check ? "yes" : "no"}
+                    </div>
+                </div>
+                <br />
+                <div>
+                    <label htmlFor='radiobox'>Male </label>
+                    <input type='radio' id='radiobox' value='Male'  checked={this.state.gender === 'Male'} onChange={this.changeradiohandler}/>
+                    <label htmlFor="radiobox">Female </label>
+                    <input type='radio' id='radiobox' value='Female' checked={this.state.gender === 'Female'} onChange={this.changeradiohandler}/>
+                    <label htmlFor="radiobox">Other </label>
+                    <input type='radio' id='radiobox' value='Other' checked={this.state.gender === 'Other'}  onChange={this.changeradiohandler}/> 
                 </div>
                 <br />
                 <div>
