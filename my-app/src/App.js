@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import PostForm from './components/PostForm';
+// import PostList from './components/PostList';
 // import ListPost from './components/ListPost';
 // import EventBind from './components/EventBind';
 // import ParentComponent from './components/ParentComponent';
@@ -9,7 +11,10 @@ import './App.css';
 // import Greetings from './components/Greetings';
 // import Welcome from './components/Welcome';
 // import DemoForm from './components/DemoForm';
-import RefsDemo from './components/RefsDemo';
+// import RefsDemo from './components/RefsDemo';
+// import ParentLifecycle from './components/ParentLifecycle';
+// import GrandParent from './components/GrandParent';
+// import { UserProvider } from './components/userContext';
 
 
 function App() {
@@ -29,7 +34,15 @@ function App() {
       {/* <UserGreeting /> */}
       {/* <ListPost /> */}
       {/* <DemoForm /> */}
-      <RefsDemo />
+      {/* <RefsDemo /> */}
+      {/* <ParentLifecycle /> */}
+
+      {/* <UserProvider value="Saksham">
+        <GrandParent />
+      </UserProvider> */}
+
+      {/* <PostList /> */}
+      <PostForm />
     </div>
   );
 }
